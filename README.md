@@ -98,3 +98,82 @@ El sistema está diseñado para ser una solución integral que permita a las cl�
     - Capacidad para manejar 1000+ atenciones simultáneas en horas pico
     - Arquitectura preparada para expansión nacional
     - Disponibilidad objetivo del 99.9%
+
+- Estrategias de Escalabilidad:
+    - Escalado Horizontal: Microservicios independientes
+    - Caching Distribuido: Redis para datos de sesión y consultas frecuentes
+    - Balanceador de Carga: Distribución inteligente de tráfico
+    - Base de Datos: Particionamiento horizontal y réplicas de lectura
+    - Colas de Mensajes: Procesamiento asíncrono de tareas pesadas
+ 
+## 🏛️ Esquema Arquitectónico Macro
+
+FALTA IMAGEN XD
+
+## 📈 Fitness Functions Definidas
+1. Performance
+    - Latencia P95: ≤ 600ms para endpoints críticos
+    - Latencia P99: ≤ 1000ms para operaciones complejas
+    - Throughput: ≥ 1000 requests/segundo por sede
+
+2. Disponibilidad
+    - Uptime: 99.9% de disponibilidad
+    - Recovery Time: ≤ 5 minutos para fallos críticos
+    - Backup: Recovery Point Objective (RPO) ≤ 1 hora
+
+3. Escalabilidad
+    - Carga Concurrente: 1000+ usuarios simultáneos
+    - Crecimiento: Soporte para 10x aumento de sedes
+    - Auto-scaling: Escalado automático basado en métricas
+
+4. Seguridad
+    - Autenticación: JWT con refresh tokens
+    - Autorización: RBAC (Role-Based Access Control)
+    - Encriptación: TLS 1.3 para tráfico, AES-256 para datos
+
+
+## 🔄 POC (Proof of Concept)
+
+1. Alcance del MVP
+Flujo Principal: Registro y gestión completa de citas médicas
+
+2. Entregables Técnicos
+- ✅ Base de Datos: Esquema completo con relaciones
+- ✅ API RESTful: Documentación Swagger/OpenAPI
+- ✅ Code Coverage: ≥ 90% de cobertura de pruebas
+- ✅ Performance: Endpoint POST /cita/reservar con P95 ≤ 600ms
+- ✅ Availability: Monitoreo de disponibilidad implementado
+- ✅ Containerización: Docker y Docker Compose
+- ✅ CI/CD: Pipeline automatizado con GitHub Actions
+
+3. Endpoints Principales del POC
+
+```http
+POST   /api/v1/citas/reservar
+GET    /api/v1/citas/{id}
+PUT    /api/v1/citas/{id}
+DELETE /api/v1/citas/{id}
+GET    /api/v1/pacientes/{id}/historial
+POST   /api/v1/pacientes/registro
+```
+
+## 🛠️ Stack Tecnológico
+
+1. Backend
+    - Framework: python 3
+    - Base de Datos: PostgreSQL 15+
+    - API Documentation: Swagger/OpenAPI 3.0
+
+2. DevOps & Infraestructura
+    - Containerización: Docker + Docker Compose
+    - CI/CD: GitHub Actions
+    - Monitoring: **FALTA DEFINIR** 
+    - Logging: **FALTA DEFINIR**
+
+3. Testing
+    - **FALTA DEFINIR XD**
+  
+
+## 🚀 Roadmap de Implementación
+
+## 📊 Métricas y KPIs del Sistema
