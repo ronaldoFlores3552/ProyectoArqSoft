@@ -46,23 +46,7 @@ El sistema está diseñado para ser una solución integral que permita a las cl�
   - API de gestión de proveedores
   - Sistema de trazabilidad
 
-### 3. 💰 Módulo de Facturación y Pagos
-
-- Responsabilidades:
-
-  - Generación automática de boletas y facturas electrónicas
-  - Integración con SUNAT para comprobantes fiscales
-  - Procesamiento de pagos múltiples (Niubiz, Yape, PagoEfectivo)
-  - Gestión de planes de pago y financiamiento
-  - Conciliación bancaria automatizada
-
-- Componentes Clave:
-  - Motor de facturación electrónica
-  - Gateway de pagos unificado
-  - Sistema de conciliación
-  - API de integración SUNAT
-
-### 4. 📊 Módulo de Administración Multisede
+### 3. 📊 Módulo de Administración Multisede
 
 - Responsabilidades:
 
@@ -78,7 +62,7 @@ El sistema está diseñado para ser una solución integral que permita a las cl�
   - Dashboard de KPIs
   - API de reporting
 
-### 5. 🎥 Módulo de Atención por Videoconsulta (Opcional)
+### 4. 🎥 Módulo de Atención por Videoconsulta (Opcional)
 
 - Responsabilidades:
 
@@ -189,7 +173,7 @@ POST   /api/v1/pacientes/registro
 
 ## 📊 Métricas y KPIs del Sistema
 
-## **Ejecutar el proyecto**
+## **📁 Ejecutar el proyecto**
 
 ```console
     - python3 -m venv venv
